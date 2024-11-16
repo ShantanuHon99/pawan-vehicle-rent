@@ -1,0 +1,137 @@
+
+.div101 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, #630eff 80%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  .logo {
+    max-width: 300px;
+    height: auto; /* Adjust as necessary */
+    filter: brightness(.8) saturate(2) ; /* Increase saturation and reduce brightness */
+  }
+  
+  
+  .nav101 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navlink101 {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .navlink101 li {
+    margin: 5px 15px;
+    position:relative;
+  }
+  
+  .navlink101 a {
+    color: #ffffff; /* Primary link color */
+    text-decoration: none;
+    font-size: larger;
+    font-weight: lighter;
+    padding: 5px 10px;
+    position: relative; /* Required for positioning the ::after element */
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navlink101 a::after {
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjust position as necessary */
+    height: 2px; /* Height of the line */
+    width: 100%;
+    background-color: red; /* Color of the line */
+    transform: scaleX(0); /* Initial scale to hide the line */
+    transition: transform 0.3s ease; /* Animation effect */
+  }
+  
+  .navlink101 a:hover {
+    color: black; /* Color on hover */
+    font-weight: 600;
+    transform: scale(1.1); /* Scale effect on hover */
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent white background on hover */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .navlink101 a:hover::after {
+    transform: scaleX(1); /* Scale to full width on hover */
+  }
+  
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: white; /* Color for lines */
+    margin: 3px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .div101 {
+    
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, #630eff 150%);
+     
+    }
+    .navlink101 {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, #630eff 80%);
+        width: 100%;
+        z-index: 10;
+        padding: 10px 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    .navlink101 li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .navlink101 li a{
+      color: #ffffff;
+      font-weight: 600;
+    } 
+  
+  
+    .menu-toggle {
+        display: flex;
+    }
+  
+    .navlink101.show {
+        display: flex;
+    }
+  
+    .menu-toggle.active .line:nth-child(1) {
+        transform: rotate(45deg);
+        margin-top: 8px;
+    }
+  
+    .menu-toggle.active .line:nth-child(2) {
+        opacity: 0;
+    }
+  
+    .menu-toggle.active .line:nth-child(3) {
+        transform: rotate(-45deg);
+        margin-top: 8px;
+    }
+    .logo{
+      max-width: 200px;
+    }
+  }
+  /* Partnered Companies */
