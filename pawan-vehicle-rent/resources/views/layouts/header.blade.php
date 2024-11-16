@@ -17,7 +17,7 @@
 <body>
 <header>
 <div class="div101">
-        <img src="../images/logo.png" alt="Logo" class="logo">
+        <img src="../assets/images/logo.png" alt="Logo" class="logo">
         <div class="nav101" id="navbar">
             <div class="menu-toggle" id="menuToggle">
                 <div class="line"></div>
@@ -25,7 +25,7 @@
                 <div class="line"></div>
             </div>
             <ul class="navlink101" id="navLinks">
-                <li><a href="#home" style="font-weight: 600;">Home</a></li>
+                <li><a href="#home" >Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#about">About Us</a></li>

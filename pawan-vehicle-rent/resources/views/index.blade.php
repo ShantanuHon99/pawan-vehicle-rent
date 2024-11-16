@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
-@section('title', 'Pawan Travels')
+@section('title', 'Home Page')
 
 @section('content')
-    
+    @include('home')
 @endsection
