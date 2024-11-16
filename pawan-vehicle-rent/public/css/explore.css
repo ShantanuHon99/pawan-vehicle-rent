@@ -1,0 +1,123 @@
+/* resources/css/explore.css */
+
+.explore-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa; /* Light background */
+    overflow: hidden;
+}
+
+.explore-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4b0082; /* Dark purple */
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.explore-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.explore-card {
+    position: relative;
+    width: 45%;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.explore-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image backgrounds */
+.explore-travel {
+    background: url('../assets/images/explore1.jpg') center/cover no-repeat;
+}
+
+.explore-vehicles {
+    background: url('../assets/images/explore2.jpg') center/cover no-repeat;
+}
+
+/* Tinted overlay */
+.explore-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(117, 24, 183, 0.663); /* Purple tint */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.explore-card:hover .explore-overlay {
+    background: rgba(76, 0, 130, 0.875); /* Darker tint on hover */
+}
+
+/* Card content */
+.explore-card-title {
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.explore-card-text {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .explore-card {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .explore-heading {
+        font-size: 2rem;
+    }
+
+    .explore-card-title {
+        font-size: 1.5rem;
+    }
+
+    .explore-card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .explore-sections {
+        flex-direction: column;
+    }
+
+    .explore-card {
+        height: 200px;
+    }
+
+    .explore-card-title {
+        font-size: 1.3rem;
+    }
+
+    .explore-card-text {
+        font-size: 0.8rem;
+    }
+}

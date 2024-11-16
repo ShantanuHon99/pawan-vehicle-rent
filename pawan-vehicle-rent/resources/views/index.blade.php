@@ -4,4 +4,6 @@
 
 @section('content')
     @include('home')
+    @include('explore')
+    @include('whyus')
 @endsection
