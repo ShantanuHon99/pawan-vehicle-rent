@@ -13,17 +13,7 @@
                 <div class="card-body" style="background-color: white; padding: 30px; border-radius: 10px;">
 
                     <!-- Success Message -->
-                    @if(session('success'))
-                        <div class="alert alert-success" role="alert" style="margin-bottom: 20px; color: white; background-color: green; border-color: green;">
-                            {{ session('success') }}
-                        </div>
-                        <!-- Redirect after 1.5 seconds -->
-                        <script type="text/javascript">
-                            setTimeout(function(){
-                                window.location.href = "{{ route('admin.addvehicle') }}";  // Change to your desired route
-                            }, 300000);
-                        </script>
-                    @endif
+                   
 
                     <h4 class="text-center" style="color: #4b0082; margin-bottom: 20px; font-size: 2rem; font-weight: bold;">Login</h4>
 

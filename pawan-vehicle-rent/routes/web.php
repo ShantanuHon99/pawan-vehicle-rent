@@ -18,8 +18,13 @@ use App\Http\Controllers\AdminAuthController;
 // Client routes
 // Route::get(uri: '/vehicles', [ClientVehicleController::class, 'index'])->name('rentvehicles');
 Route::get('/vehicles', function () {
-    return view('rentvehicle');
+    // Fetch all vehicles from the database
+    $vehicles = App\Models\Vehicle::all(); // This fetches all vehicles
+
+    // Return the view and pass the vehicles data
+    return view('rentvehicle', compact('vehicles'));
 });
+
 Route::get('/packages', function () {
     return view('packages');
 });
@@ -30,6 +35,8 @@ Route::get('/packages', function () {
 
 Route::get('/admin/add-vehicle', [VehicleController::class, 'create'])->name('addvehicle');
 Route::post('/add-vehicle', [VehicleController::class, 'store'])->name('store-vehicle');
+// In web.php
+Route::get('/admin/add-vehicle', [VehicleController::class, 'showAvailableVehicles'])->name('addvehicle');
 
 // routes/web.php
 

@@ -9,9 +9,12 @@ use App\Models\Vehicle;
 class VehicleController extends Controller
 {
     // Show the add vehicle form
-    public function create()
+    public function showAvailableVehicles()
     {
-        return view('admin/addvehicle'); // Ensure the blade file is named correctly
+        // Fetch all available vehicles from the database
+        $vehicles = Vehicle::all();
+
+        return view('admin.addvehicle', compact('vehicles')); // Pass the vehicles data to the view
     }
 
     // Handle the form submission
@@ -45,4 +48,5 @@ class VehicleController extends Controller
 
         return redirect()->route('addvehicle')->with('success', 'Vehicle added successfully!');
     }
+    
 }
