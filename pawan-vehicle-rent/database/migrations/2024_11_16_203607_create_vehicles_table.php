@@ -13,11 +13,13 @@ class CreateVehiclesTable extends Migration
             $table->string('driver_name');
             $table->string('vehicle_type');
             $table->string('vehicle_number')->unique();
-            $table->json('vehicle_pics'); // Store URLs of three images in JSON format
-            $table->boolean('available')->default(true);
+            $table->json('vehicle_pictures');
+           
+            $table->boolean('available')->default(false);
             $table->timestamps();
         });
     }
+    
 
     public function down()
     {
