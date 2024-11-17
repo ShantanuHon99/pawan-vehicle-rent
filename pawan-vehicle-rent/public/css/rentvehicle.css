@@ -25,8 +25,9 @@
 /* Grid Styling */
 .rentvehicle-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* Max 3 cards per row */
     gap: 1.5rem; /* Adjusted spacing between cards */
+    justify-items: end; /* Align the grid items to the right */
 }
 
 .rentvehicle-card {
@@ -40,9 +41,11 @@
     height: auto; /* Fixed height for the card */
     
     display: flex;
-    flex-direction:column; /* Ensure content is stacked vertically */
+    flex-direction: column; /* Ensure content is stacked vertically */
     justify-content: space-between; /* Space out the content */
+    cursor: pointer;
 }
+
 
 .rentvehicle-card:hover {
     transform: scale(1.05);
@@ -69,13 +72,11 @@
 .rentvehicle-number,
 .rentvehicle-driver {
     font-size: 1rem;
-    margin: 0.5rem 0;
     color: #000000;
 }
 
 .rentvehicle-availability {
     font-weight: bold;
-    margin-top: 1rem;
     padding: 0.5rem;
     border-radius: 8px;
     display: inline-block;
@@ -95,7 +96,6 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 1rem;
 }
 
 .rentvehicle-button {

@@ -39,6 +39,9 @@ Route::post('/add-vehicle', [VehicleController::class, 'store'])->name('store-ve
 Route::get('/admin/add-vehicle', [VehicleController::class, 'showAvailableVehicles'])->name('addvehicle');
 
 // routes/web.php
+// In routes/web.php
+Route::get('/admin/vehicle/{id}/toggle', [VehicleController::class, 'toggleAvailability'])->name('admin.toggleAvailability');
+Route::get('/admin/vehicle/{id}/delete', [VehicleController::class, 'deleteVehicle'])->name('admin.deleteVehicle');
 
 
 
@@ -47,7 +50,7 @@ Route::post('admin/login', [AdminAuthController::class, 'login']);
 Route::get('admin/register', [AdminAuthController::class, 'showRegisterForm'])->name('admin.register');
 Route::post('admin/register', [AdminAuthController::class, 'register']);
 
-Route::get('admin/dashboard', function () {
-    return view('admin.dashboard');
-})->name('dashboard');
+Route::get('/admin/dashboard', [VehicleController::class, 'index'])->name('admin.dashboard')->middleware('auth:admin');
+Route::post('/admin/logout', [AdminAuthController::class, 'logout'])->name('admin.logout');
+
 

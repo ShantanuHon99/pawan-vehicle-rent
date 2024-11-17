@@ -26,7 +26,7 @@ class AdminAuthController extends Controller
         ]);
 
         if (Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password])) {
-            return redirect()->route('dashboard')->with('success', 'Login successful!');
+            return redirect()->route('admin.dashboard')->with('success', 'Login successful!');
         } else {
             return back()->with('error', 'Invalid credentials');
         }
@@ -73,6 +73,10 @@ public function register(Request $request)
 
     return back()->with('error', 'The pre-seeded admin password does not match.');
 }
-
+ public function logout()
+    {
+        Auth::guard('admin')->logout(); // Log out the admin
+        return redirect()->route('admin.login')->with('success', 'You have successfully logged out.');
+    }
 
 }
