@@ -1,18 +1,9 @@
-        document.addEventListener('DOMContentLoaded', () => {
-            const cta = document.querySelector('.cta');
+// resources/js/home.js
 
-            cta.addEventListener('click', () => {
-                const hours = new Date().getHours();
-                let greeting;
+document.addEventListener('DOMContentLoaded', () => {
+    const cta = document.querySelector('.cta');
 
-                if (hours < 12) {
-                    greeting = "Good Morning! 🌅";
-                } else if (hours < 18) {
-                    greeting = "Good Afternoon! ☀️";
-                } else {
-                    greeting = "Good Evening! 🌙";
-                }
-
-                alert(`${greeting} Welcome to Pawan Travels!`);
-            });
-        });
+    cta.addEventListener('click', () => {
+        alert('Welcome to Your Journey!');
+    });
+});
