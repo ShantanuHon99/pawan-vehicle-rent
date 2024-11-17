@@ -55,6 +55,7 @@
     Add Vehicle
 </button>
 
+                <!-- <button onclick="alert('Redirect to Add Package')" class="btn btn-primary" 
                         style="background-color: #4b0082; border: none;">
                     Add Package
                 </button> -->
