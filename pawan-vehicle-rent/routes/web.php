@@ -40,7 +40,7 @@ Route::post('admin/login', [AdminAuthController::class, 'login']);
 Route::get('admin/register', [AdminAuthController::class, 'showRegisterForm'])->name('admin.register');
 Route::post('admin/register', [AdminAuthController::class, 'register']);
 
-Route::get('/dashboard', function () {
+Route::get('admin/dashboard', function () {
     return view('admin.dashboard');
 })->name('dashboard');
 
