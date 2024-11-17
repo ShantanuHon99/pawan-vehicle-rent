@@ -45,4 +45,13 @@ class VehicleController extends Controller
 
         return redirect()->route('addvehicle')->with('success', 'Vehicle added successfully!');
     }
+
+    public function index()
+    {
+        // Retrieve all vehicles from the database
+        $vehicles = Vehicle::all();
+
+        // Pass the data to the view
+        return view('admin/dashboard', compact('vehicles'));
+    }
 }

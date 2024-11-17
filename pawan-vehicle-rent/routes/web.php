@@ -40,7 +40,5 @@ Route::post('admin/login', [AdminAuthController::class, 'login']);
 Route::get('admin/register', [AdminAuthController::class, 'showRegisterForm'])->name('admin.register');
 Route::post('admin/register', [AdminAuthController::class, 'register']);
 
-Route::get('admin/dashboard', function () {
-    return view('admin.dashboard');
-})->name('dashboard');
+Route::get('admin/dashboard', [VehicleController::class, 'index'])->name('dashboard');
 

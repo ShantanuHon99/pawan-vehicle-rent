@@ -7,7 +7,6 @@
     <!-- Include Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-       
         .dashboard-container {
             margin: 50px auto;
             max-width: 1200px;
@@ -51,14 +50,9 @@
             <div class="card action-buttons p-4">
                 <div class="section-header">Actions</div>
                 <button onclick="window.location.href='{{ route('addvehicle') }}'" class="btn btn-primary" 
-        style="background-color: #4b0082; border: none;">
-    Add Vehicle
-</button>
-
-                <!-- <button onclick="alert('Redirect to Add Package')" class="btn btn-primary" 
                         style="background-color: #4b0082; border: none;">
-                    Add Package
-                </button> -->
+                    Add Vehicle
+                </button>
             </div>
         </div>
 
@@ -66,38 +60,38 @@
         <div class="col-md-8">
             <div class="card vehicle-list p-4">
                 <div class="section-header">Vehicle List</div>
+                
+                <!-- Table to display vehicle details -->
                 <table class="table table-bordered">
-                    <thead class="thead-light">
+                    <thead>
                         <tr>
                             <th>#</th>
-                            <th>Vehicle Name</th>
-                            <th>Availability</th>
+                            <th>Driver Name</th>
+                            <th>Vehicle Type</th>
+                            <th>Vehicle Number</th>
+                            <th>Vehicle Pictures</th>
+                            <th>Available</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach ($vehicles as $index => $vehicle)
                         <tr>
-                            <td>1</td>
-                            <td>Bus A</td>
+                            <td>{{ $index + 1 }}</td>
+                            <td>{{ $vehicle->driver_name }}</td>
+                            <td>{{ $vehicle->vehicle_type }}</td>
+                            <td>{{ $vehicle->vehicle_number }}</td>
                             <td>
-                                <span class="badge bg-success">Available</span>
+                                @if(!empty($vehicle->vehicle_pictures))
+                                    <img src="{{ asset('storage/public' . $vehicle->vehicle_pictures) }}" alt="Vehicle Picture" style="width: 100px; height: auto;">
+                                @else
+                                    <span>No Picture</span>
+                                @endif
                             </td>
-                            <td>
-                                <button class="btn btn-warning btn-sm">Toggle Availability</button>
-                                <button class="btn btn-danger btn-sm">Delete</button>
-                            </td>
+                            <td>{{ $vehicle->available ? 'Yes' : 'No' }}</td>
+                          
                         </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Bus B</td>
-                            <td>
-                                <span class="badge bg-danger">Unavailable</span>
-                            </td>
-                            <td>
-                                <button class="btn btn-warning btn-sm">Toggle Availability</button>
-                                <button class="btn btn-danger btn-sm">Delete</button>
-                            </td>
-                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
