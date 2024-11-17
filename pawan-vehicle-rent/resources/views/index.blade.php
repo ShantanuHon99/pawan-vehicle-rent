@@ -6,4 +6,5 @@
     @include('home')
     @include('explore')
     @include('whyus')
+    @include('feedback')
 @endsection

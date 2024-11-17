@@ -26,9 +26,9 @@
             </div>
             <ul class="navlink101" id="navLinks">
                 <li><a href="/" >Home</a></li>
-                <li><a href="/vehicles">Vehicle</a></li>
-                <li><a href="/packages">Packages</a></li>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="/vehicles">Rent Vehicle</a></li>
+                <li><a href="/packages">Travel Packages</a></li>
+                <li><a href="/#about">About Us</a></li>
             </ul>
         </div>
     </div>
