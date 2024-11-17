@@ -82,6 +82,30 @@
     color: #ffffff;
 }
 
+/* Spinner Animation */
+.loading-spinner {
+    position: fixed;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    width: 80px;  /* Make the spinner bigger */
+    height: 80px;  /* Make the spinner bigger */
+    border: 10px solid #f3f3f3;  /* Thicker border */
+    border-top: 10px solid #4b0082;  /* Spinner color */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    z-index: 9999;  /* Ensure the spinner is above other content */
+    background-color: white;  /* White background behind the spinner */
+    padding: 15px;  /* Adding some padding around the spinner */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Light shadow around the spinner */
+}
+
+/* Spinner animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .explore-card {
