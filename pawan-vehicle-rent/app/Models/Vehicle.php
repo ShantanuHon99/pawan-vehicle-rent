@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Vehicle extends Model
+{
+    use HasFactory;
+    protected $fillable = [
+        'driver_name',
+        'vehicle_type',
+        'vehicle_number',
+        'vehicle_pictures',
+        
+        'available',
+    ];
+    
+
+    protected $table = 'vehicles';
+    protected $casts = [
+        'vehicle_pictures' => 'array',
+    ];
+}
+

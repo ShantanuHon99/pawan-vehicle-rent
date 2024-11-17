@@ -2,13 +2,13 @@
 
 .home-container {
     position: relative;
-    width: 100vw;
-    height: 80vh;
+    width: auto;
+    height: 85vh;
     background: url('../assets/images/home.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow:hidden;
 }
 
 .overlay {
