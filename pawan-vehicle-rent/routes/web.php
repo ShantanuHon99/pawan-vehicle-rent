@@ -9,6 +9,7 @@ Route::get('/', function () {
 
 use App\Http\Controllers\Admin\VehicleController as AdminVehicleController;
 use App\Http\Controllers\Client\VehicleController as ClientVehicleController;
+use App\Http\Controllers\AdminAuthController;
 
 // Admin routes
 // Route::get('/admin/addvehicle', [AdminVehicleController::class, 'create'])->name('admin.addvehicle');
@@ -26,5 +27,20 @@ Route::get('/packages', function () {
 
 
 
+
 Route::get('/admin/add-vehicle', [VehicleController::class, 'create'])->name('addvehicle');
 Route::post('/add-vehicle', [VehicleController::class, 'store'])->name('store-vehicle');
+
+// routes/web.php
+
+
+
+Route::get('admin/login', [AdminAuthController::class, 'showLoginForm'])->name('admin.login');
+Route::post('admin/login', [AdminAuthController::class, 'login']);
+Route::get('admin/register', [AdminAuthController::class, 'showRegisterForm'])->name('admin.register');
+Route::post('admin/register', [AdminAuthController::class, 'register']);
+
+Route::get('/dashboard', function () {
+    return view('admin.dashboard');
+})->name('dashboard');
+
