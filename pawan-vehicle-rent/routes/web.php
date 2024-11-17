@@ -21,3 +21,16 @@ Route::get('/vehicles', function () {
 Route::get('/packages', function () {
     return view('packages');
 });
+
+// routes/web.php
+
+use App\Http\Controllers\AdminAuthController;
+
+Route::get('admin/login', [AdminAuthController::class, 'showLoginForm'])->name('admin.login');
+Route::post('admin/login', [AdminAuthController::class, 'login']);
+Route::get('admin/register', [AdminAuthController::class, 'showRegisterForm'])->name('admin.register');
+Route::post('admin/register', [AdminAuthController::class, 'register']);
+
+Route::get('/dashboard', function () {
+    return view('admin.dashboard');
+})->name('dashboard');
