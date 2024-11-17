@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Validator;
 
 class AdminAuthController extends Controller
 {
+    
     // Show the login form
     public function showLoginForm()
     {

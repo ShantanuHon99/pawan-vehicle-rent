@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Models\Vehicle;
+use Illuminate\Support\Facades\Auth;
+
 
 class VehicleController extends Controller
 {
@@ -12,11 +14,20 @@ class VehicleController extends Controller
     // In your VehicleController
 // In VehicleController.php
 
-public function index() {
-    // Fetch all vehicles from the database
-    $vehicles = Vehicle::all(); // Fetch all vehicles from the database
-    return view('admin.dashboard', compact('vehicles')); // Pass 'vehicles' to the Blade view
-}
+public function index()
+    {
+        // Check if the admin is authenticated
+        if (!Auth::guard('admin')->check()) {
+            // If not authenticated, redirect to login page
+            return redirect()->route('admin.login')->with('error', 'Please log in to access the dashboard.');
+        }
+
+        // Fetch vehicles for the dashboard
+        $vehicles = Vehicle::all();
+        
+        // Return the dashboard view with vehicle data
+        return view('admin.dashboard', compact('vehicles'));
+    }
 
 public function toggleAvailability($id) {
     $vehicle = Vehicle::findOrFail($id);
