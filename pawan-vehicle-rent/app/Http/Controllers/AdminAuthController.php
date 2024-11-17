@@ -39,20 +39,29 @@ class AdminAuthController extends Controller
     }
 
     // Handle the register request
-    public function register(Request $request)
-    {
-        $validator = Validator::make($request->all(), [
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:admins',
-            'password' => 'required|string|min:8|confirmed',
-        ]);
+    // app/Http/Controllers/AdminAuthController.php
 
-        if ($validator->fails()) {
-            return redirect()->route('admin.register')
-                        ->withErrors($validator)
-                        ->withInput();
-        }
+// app/Http/Controllers/AdminAuthController.php
 
+public function register(Request $request)
+{
+    $validator = Validator::make($request->all(), [
+        'name' => 'required|string|max:255',
+        'email' => 'required|string|email|max:255|unique:admins',
+        'password' => 'required|string|min:8|confirmed',
+        'pre_seeded_password' => 'required|string', // Validate the pre-seeded password field
+    ]);
+
+    if ($validator->fails()) {
+        return redirect()->route('admin.register')
+                    ->withErrors($validator)
+                    ->withInput();
+    }
+
+    // Check if the entered pre-seeded password matches the pre-seeded admin's password
+    $preSeededAdmin = Admin::where('email', 'admin@pawantravels.com')->first();
+    if ($preSeededAdmin && Hash::check($request->pre_seeded_password, $preSeededAdmin->password)) {
+        // Create the new admin after validating pre-seeded password
         Admin::create([
             'name' => $request->name,
             'email' => $request->email,
@@ -61,4 +70,9 @@ class AdminAuthController extends Controller
 
         return redirect()->route('admin.login')->with('success', 'Registration successful, please log in.');
     }
+
+    return back()->with('error', 'The pre-seeded admin password does not match.');
+}
+
+
 }

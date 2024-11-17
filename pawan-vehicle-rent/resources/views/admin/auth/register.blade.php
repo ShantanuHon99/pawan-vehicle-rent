@@ -70,6 +70,18 @@
                                 name="password_confirmation" required
                                 style="border-radius: 5px; border-color: #ddd; padding: 12px; font-size: 1rem; width: 100%;">
                         </div>
+                        <div class="form-group" style="margin-bottom: 20px;">
+    <label for="pre_seeded_password" class="col-form-label"
+        style="font-weight: bold; color: #333; font-size: 1.2rem;">Pre-seeded Admin Password</label>
+    <input id="pre_seeded_password" type="password" class="form-control" name="pre_seeded_password" required
+        style="border-radius: 5px; border-color: #ddd; padding: 12px; font-size: 1rem; width: 100%;"> 
+
+    @error('pre_seeded_password')
+        <span class="invalid-feedback" role="alert" style="color: red; font-size: 0.9rem;">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
+</div>
 
                         <!-- Submit Button -->
                         <div class="form-group mb-0" style="text-align: center;">
