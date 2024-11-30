@@ -17,163 +17,165 @@
 
   <div class="owl-carousel">
     <!-- Review 1 -->
-    <div class="item">
-      <div class="review-card">
-      <div class="review-card-gradient"></div>
-        <h3 class="review-name">Alice Johnson</h3>
+    <!-- Review 1 -->
+<div class="item">
+    <div class="review-card">
+        <div class="review-card-gradient"></div>
+        <h3 class="review-name">Ravi Sharma</h3>
         <div class="review-stars">
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9734;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
         </div>
-        <p class="review-text">The product is amazing! I am very happy with my purchase. It exceeded my expectations.</p>
-      </div>
+        <p class="review-text">The vehicle was well-maintained, and the driver was punctual and polite. Made our family trip to Jaipur enjoyable!</p>
     </div>
+</div>
 
-    <!-- Review 2 -->
-    <div class="item">
-      <div class="review-card">
-      <div class="review-card-gradient"></div>
-        <h3 class="review-name">John Doe</h3>
+<!-- Review 2 -->
+<div class="item">
+    <div class="review-card">
+        <div class="review-card-gradient"></div>
+        <h3 class="review-name">Priya Gupta</h3>
         <div class="review-stars">
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9734;</span>
-          <span class="star">&#9734;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+            <span class="star">&#9734;</span>
         </div>
-        <p class="review-text">Good quality, but the delivery was delayed. Overall satisfied with the product.</p>
-      </div>
+        <p class="review-text">The ride was smooth, but the car could have been cleaner. Overall, the trip to Shimla was comfortable.</p>
     </div>
+</div>
 
-    <!-- Review 3 -->
-    <div class="item">
-      <div class="review-card">
-      <div class="review-card-gradient"></div>
-        <h3 class="review-name">Mary Smith</h3>
+<!-- Review 3 -->
+<div class="item">
+    <div class="review-card">
+        <div class="review-card-gradient"></div>
+        <h3 class="review-name">Arjun Desai</h3>
         <div class="review-stars">
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
         </div>
-        <p class="review-text">Absolutely perfect! Worth every penny. Highly recommend this to everyone.</p>
-      </div>
+        <p class="review-text">Highly professional service! The car was spacious, and the driver knew the best routes in Kerala. Highly recommended!</p>
     </div>
+</div>
 
-    <!-- Review 4 -->
-    <div class="item">
-      <div class="review-card">
-      <div class="review-card-gradient"></div>
-        <h3 class="review-name">Tom Williams</h3>
+<!-- Review 4 -->
+<div class="item">
+    <div class="review-card">
+        <div class="review-card-gradient"></div>
+        <h3 class="review-name">Meera Iyer</h3>
         <div class="review-stars">
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9734;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
         </div>
-        <p class="review-text">Good product, but packaging could have been better. Still, it's worth the price.</p>
-      </div>
+        <p class="review-text">Great service for our Goa vacation! The vehicle was comfortable, but the AC could have been better.</p>
     </div>
+</div>
 
-    <!-- Review 5 -->
-    <div class="item">
-      <div class="review-card">
-      <div class="review-card-gradient"></div>
-        <h3 class="review-name">Lisa Brown</h3>
+<!-- Review 5 -->
+<div class="item">
+    <div class="review-card">
+        <div class="review-card-gradient"></div>
+        <h3 class="review-name">Vikram Singh</h3>
         <div class="review-stars">
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9734;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
         </div>
-        <p class="review-text">The product is good, but I was expecting it to be a little more sturdy.</p>
-      </div>
+        <p class="review-text">The driver was very knowledgeable and took us to all the major attractions in Udaipur. Excellent service overall!</p>
     </div>
+</div>
 
-    <!-- Review 6 -->
-    <div class="item">
-      <div class="review-card">
-      <div class="review-card-gradient"></div>
-        <h3 class="review-name">James Green</h3>
+<!-- Review 6 -->
+<div class="item">
+    <div class="review-card">
+        <div class="review-card-gradient"></div>
+        <h3 class="review-name">Anjali Mehta</h3>
         <div class="review-stars">
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
         </div>
-        <p class="review-text">Excellent product! I'm very satisfied with the quality and performance.</p>
-      </div>
+        <p class="review-text">Our Manali trip was a breeze with this service. The car was clean, and the driver was super friendly.</p>
     </div>
+</div>
 
-    <!-- Review 7 -->
-    <div class="item">
-      <div class="review-card">
-      <div class="review-card-gradient"></div>
-        <h3 class="review-name">Sarah Parker</h3>
+<!-- Review 7 -->
+<div class="item">
+    <div class="review-card">
+        <div class="review-card-gradient"></div>
+        <h3 class="review-name">Suresh Kulkarni</h3>
         <div class="review-stars">
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9734;</span>
-          <span class="star">&#9734;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+            <span class="star">&#9734;</span>
         </div>
-        <p class="review-text">The product is decent, but the customer support could be improved.</p>
-      </div>
+        <p class="review-text">Decent service for a last-minute booking. The vehicle was fine, but the pickup was delayed by 30 minutes.</p>
     </div>
+</div>
 
-    <!-- Review 8 -->
-    <div class="item">
-      <div class="review-card">
-      <div class="review-card-gradient"></div>
-        <h3 class="review-name">Michael Lee</h3>
+<!-- Review 8 -->
+<div class="item">
+    <div class="review-card">
+        <div class="review-card-gradient"></div>
+        <h3 class="review-name">Rekha Verma</h3>
         <div class="review-stars">
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9734;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
         </div>
-        <p class="review-text">Product quality is good, but it took a while to arrive. Worth the wait.</p>
-      </div>
+        <p class="review-text">Very reliable service for our trip to Ooty. The driver was courteous and ensured we reached safely.</p>
     </div>
+</div>
 
-    <!-- Review 9 -->
-    <div class="item">
-      <div class="review-card">
-      <div class="review-card-gradient"></div>
-        <h3 class="review-name">David White</h3>
+<!-- Review 9 -->
+<div class="item">
+    <div class="review-card">
+        <div class="review-card-gradient"></div>
+        <h3 class="review-name">Manoj Nair</h3>
         <div class="review-stars">
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9734;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
         </div>
-        <p class="review-text">I was a bit disappointed with the product. It doesn't match the description exactly.</p>
-      </div>
+        <p class="review-text">Great experience with the service! The driver was professional and made our Delhi-Agra trip memorable.</p>
     </div>
+</div>
 
-    <!-- Review 10 -->
-    <div class="item">
-      <div class="review-card">
-      <div class="review-card-gradient"></div>
-        <h3 class="review-name">Anna Scott</h3>
+<!-- Review 10 -->
+<div class="item">
+    <div class="review-card">
+        <div class="review-card-gradient"></div>
+        <h3 class="review-name">Kavita Joshi</h3>
         <div class="review-stars">
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
-          <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
         </div>
-        <p class="review-text">Great experience. The product works perfectly, and I am very satisfied with it.</p>
-      </div>
+        <p class="review-text">The service was flawless! We hired a Tempo Traveller for our group trip to Rajasthan, and it was perfect.</p>
     </div>
+</div>
+
   </div>
 </div>

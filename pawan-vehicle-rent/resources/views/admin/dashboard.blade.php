@@ -77,46 +77,55 @@
 
         <!-- Right Panel: Vehicle Listing -->
         <div class="col-md-8">
-            <div class="card vehicle-list p-4">
-                <div class="section-header">Vehicle List</div>
-                <table class="table table-bordered">
-    <thead class="thead-light">
-        <tr>
-            <th>#</th>
-            <th>Vehicle Name</th>
-            <th>Availability</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach ($vehicles as $vehicle)
-        <tr>
-            <td>{{ $loop->iteration }}</td>
-            <td>{{ $vehicle->vehicle_type }}</td>
-            <td>
-                <span class="badge 
-                    {{ $vehicle->available ? 'bg-success' : 'bg-danger' }}">
-                    {{ $vehicle->available ? 'Available' : 'Unavailable' }}
-                </span>
-            </td>
-            <td>
-                <a href="{{ route('admin.toggleAvailability', $vehicle->id) }}" 
-                   class="btn btn-warning btn-sm">
-                    Change Status
-                </a>
-                <a href="{{ route('admin.deleteVehicle', $vehicle->id) }}" 
-                   class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this vehicle?')">
-                    Delete
-                </a>
-            </td>
-        </tr>
-        @endforeach
-    </tbody>
-</table>
-
-            </div>
-        </div>
+    <div class="card vehicle-list p-4">
+        <div class="section-header">Vehicle List</div>
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th>#</th>
+                    <th>Vehicle Name</th>
+                    <th>Driver Name</th>
+                    <th>Driver Contact</th>
+                    <th>Availability</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ($vehicles as $vehicle)
+                <tr>
+                    <td>{{ $loop->iteration }}</td>
+                    <td>{{ $vehicle->vehicle_type }}</td>
+                    <td>
+                        {{ $vehicle->driver_name }}
+                    </td>
+                    <td>
+                        <a href="tel:{{ $vehicle->driver_contact }}">
+                            {{ $vehicle->driver_contact }}
+                        </a>
+                    </td>
+                    <td>
+                        <span class="badge 
+                            {{ $vehicle->available ? 'bg-success' : 'bg-danger' }}">
+                            {{ $vehicle->available ? 'Available' : 'Unavailable' }}
+                        </span>
+                    </td>
+                    <td>
+                        <a href="{{ route('admin.toggleAvailability', $vehicle->id) }}" 
+                           class="btn btn-warning btn-sm">
+                            Change Status
+                        </a>
+                        <a href="{{ route('admin.deleteVehicle', $vehicle->id) }}" 
+                           class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this vehicle?')">
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+                @endforeach
+            </tbody>
+        </table>
     </div>
+</div>
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

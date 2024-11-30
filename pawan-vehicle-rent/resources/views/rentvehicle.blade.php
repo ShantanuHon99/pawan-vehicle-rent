@@ -50,7 +50,7 @@
         <div id="modalGalleryImages" class="gallery-images"></div>
 
         <!-- Close Button -->
-        <button class="close-modal-button" onclick="closeGalleryModal()">Close</button>
+        <button class="close-modal-button" onclick="closeGalleryModal()">X</button>
     </div>
 </div>
 
