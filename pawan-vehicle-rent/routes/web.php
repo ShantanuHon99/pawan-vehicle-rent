@@ -32,7 +32,7 @@ Route::get('/packages', function () {
 
 
 
-
+Route::get('/admin/add-vehicle', [AdminAuthController::class, 'showAddVehicleForm'])->name('addvehicle');
 Route::get('/admin/add-vehicle', [VehicleController::class, 'create'])->name('addvehicle');
 Route::post('/add-vehicle', [VehicleController::class, 'store'])->name('store-vehicle');
 // In web.php

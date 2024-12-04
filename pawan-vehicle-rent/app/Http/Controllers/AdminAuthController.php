@@ -39,10 +39,6 @@ class AdminAuthController extends Controller
         return view('admin.auth.register');
     }
 
-    // Handle the register request
-    // app/Http/Controllers/AdminAuthController.php
-
-// app/Http/Controllers/AdminAuthController.php
 
 public function register(Request $request)
 {
@@ -50,7 +46,7 @@ public function register(Request $request)
         'name' => 'required|string|max:255',
         'email' => 'required|string|email|max:255|unique:admins',
         'password' => 'required|string|min:8|confirmed',
-        'pre_seeded_password' => 'required|string', // Validate the pre-seeded password field
+        'pre_seeded_password' => 'required|string', 
     ]);
 
     if ($validator->fails()) {

@@ -1,3 +1,4 @@
+@section('title', content: 'Login')
 
 <div class="container" style="margin-top: 50px; display: flex; justify-content: center; align-items: center;">
     <div class="row justify-content-center" style="width: 100%; max-width: 450px;">

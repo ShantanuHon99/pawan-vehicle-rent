@@ -47,7 +47,10 @@ public function deleteVehicle($id) {
     // Show the add vehicle form
     public function showAvailableVehicles()
     {
-        // Fetch all available vehicles from the database
+        if (!Auth::guard('admin')->check()) {
+            // If not authenticated, redirect to login page
+            return redirect()->route('admin.login')->with('error', 'Please log in to access the dashboard.');
+        }
         $vehicles = Vehicle::all();
 
         return view('admin.addvehicle', compact('vehicles')); // Pass the vehicles data to the view

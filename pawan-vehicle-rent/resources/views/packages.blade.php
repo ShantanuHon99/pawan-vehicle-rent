@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+@section('title', 'Tour-Packages')
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Packages</title>
@@ -18,7 +19,7 @@
     <section class="travelpackages-grid">
         <!-- Package 1 -->
         <div class="travelpackages-card">
-            <img src="../assets/images/explore1.jpg" alt="Travel Package Image" class="travelpackages-image">
+            <img src="../assets/images/goa.jpg" alt="Travel Package Image" class="travelpackages-image">
             <div class="travelpackages-info">
                 <h2 class="travelpackages-title">Goa Beach Tour</h2>
                 <p class="travelpackages-description">5 Days, 4 Nights</p>
@@ -35,7 +36,7 @@
         
         <!-- Package 2 -->
         <div class="travelpackages-card">
-            <img src="../assets/images/explore1.jpg" alt="Travel Package Image" class="travelpackages-image">
+            <img src="../assets/images/shimla.jpg" alt="Travel Package Image" class="travelpackages-image">
             <div class="travelpackages-info">
                 <h2 class="travelpackages-title">Shimla & Manali Tour</h2>
                 <p class="travelpackages-description">7 Days, 6 Nights</p>
@@ -52,7 +53,7 @@
         
         <!-- Package 3 -->
         <div class="travelpackages-card">
-            <img src="../assets/images/explore1.jpg" alt="Travel Package Image" class="travelpackages-image">
+            <img src="../assets/images/kerala.jpg" alt="Travel Package Image" class="travelpackages-image">
             <div class="travelpackages-info">
                 <h2 class="travelpackages-title">Kerala Backwater Tour</h2>
                 <p class="travelpackages-description">6 Days, 5 Nights</p>
