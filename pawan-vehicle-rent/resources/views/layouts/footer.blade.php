@@ -30,15 +30,7 @@
                         designed to provide you with comfort and convenience every step of the way. Explore new
                         destinations and create lasting memories with us.
                     </p>
-                    <div class="mt-3">
-                        <a href="https://www.instagram.com/datadoctorr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                            class="btn btn-floating btn-light btn-lg footer-icon"
-                            style="padding: 8px 12px; border-radius: 50%; background-color: #f5f5f5; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);"
-                            aria-label="Instagram">
-                            <i class='bx bxl-google' style="font-size: 1.3rem; color: #4CAF50;"></i>
-                            <div class="span" style="font-size: 0.9rem; color: #333;">RedBus</div>
-                        </a>
-                    </div>
+                    
                 </div>
 
 
@@ -48,11 +40,6 @@
                         <i class='bx bx-map' style="font-size: 1.5rem; margin-right: 10px;"></i>
                         <span>Shop no 02, Near, Nagapalika Nagar Manmad Highway, Sai Nagar, Shirdi, Maharashtra
                             423109</span>
-                    </div>
-                    <div class="d-flex align-items-start mb-3" style="justify-content: flex-start;">
-                        <i class='bx bx-envelope' style="font-size: 1.5rem; margin-right: 10px;"></i>
-                        <a href="mailto:smartcomputersrahata@gmail.com"
-                            style="color: white; text-decoration: none;">smartcomputersrahata@gmail.com</a>
                     </div>
 
                     <div class="d-flex align-items-start mb-3" style="justify-content: flex-start;">
